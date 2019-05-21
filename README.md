@@ -1,6 +1,16 @@
 # Real time tweets pipeline using GCP
 Forked from https://github.com/GoogleCloudPlatform/kubernetes-bigquery-python and then dutifully hacked.
 
+### Members
+Cristobal Becerra <br />
+Leiser Mahu <br />
+Nicolas Olivares <br />
+
+## Problem description
+
+##  Solution approach
+
+
 ## Architecture
 Twitter -> App Engine Flex -> PubSub -> Dataflow -> BigQuery
 
