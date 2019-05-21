@@ -19,9 +19,8 @@ import java.util.List;
 import static org.apache.beam.sdk.io.gcp.bigquery.BigQueryIO.Write.CreateDisposition.CREATE_IF_NEEDED;
 import static org.apache.beam.sdk.io.gcp.bigquery.BigQueryIO.Write.WriteDisposition.WRITE_APPEND;
 
-/**
- * Dataflow streaming pipeline to read tweets from PubSub topic and write the payload to BigQuery
- */
+// Pipeline en Dataflow para leer tweets desde un topico de Google PubSub y escribirlos en BigQuery.
+
 public class TweetPipeline {
     private static final String TOPIC = "projects/sd-3-241301/topics/twitter";
     private static final String BIGQUERY_DESTINATION = "%s:twitter.tweets";
