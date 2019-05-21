@@ -15,14 +15,14 @@ dependencies {
 }
 
 run {
-    args = ["--project=sd-2-241222",
+    args = ["--project=sd-3-241301",
             "--runner=DataflowRunner",
             "--streaming=true",
             "--maxNumWorkers=2",
             "--numWorkers=1",
             "--zone=us-east1-b",
-            "--stagingLocation=gs://lab2-twitter-demo/jars",
-            "--tempLocation=gs://lab2-twitter-demo/tmp"
+            "--stagingLocation=gs://lab2-twitter/jars",
+            "--tempLocation=gs://lab2-twitter/tmp"
     ]
 }
 
