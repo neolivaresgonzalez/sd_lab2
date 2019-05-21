@@ -1,6 +1,3 @@
-"""This script uses the Twitter Streaming API, via the tweepy library,
-to pull in tweets and publish them to a PubSub topic.
-"""
 import base64
 import datetime
 import utils
