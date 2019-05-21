@@ -23,7 +23,7 @@ import static org.apache.beam.sdk.io.gcp.bigquery.BigQueryIO.Write.WriteDisposit
  * Dataflow streaming pipeline to read tweets from PubSub topic and write the payload to BigQuery
  */
 public class TweetPipeline {
-    private static final String TOPIC = "projects/sd-2-241222/topics/twitter";
+    private static final String TOPIC = "projects/sd-3-241301/topics/twitter";
     private static final String BIGQUERY_DESTINATION = "%s:twitter.tweets";
 
     public static void main(String[] args) {
