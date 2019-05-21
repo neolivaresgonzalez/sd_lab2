@@ -26,4 +26,4 @@ run {
     ]
 }
 
-mainClassName="org.polleyg.TweetPipeline"
+mainClassName="com.sdistribuidos.TweetPipeline"
