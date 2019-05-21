@@ -31,7 +31,7 @@ class StdOutListener(StreamListener):
     client = utils.create_pubsub_client(utils.get_credentials())
 
     def write_to_pubsub(self, tw):
-        publish(self.client, 'projects/sd-2-241222/topics/twitter', tw)
+        publish(self.client, 'projects/sd-3-241301/topics/twitter', tw)
 
     def on_data(self, data):
         """What to do when tweet data is received."""

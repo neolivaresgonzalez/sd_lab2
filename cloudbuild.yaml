@@ -5,7 +5,8 @@ steps:
 
 # App Engine
 - name: gcr.io/cloud-builders/gcloud
-  args: ['app', 'deploy', '--version=tweets']
+  #args: ['app', 'deploy', '--version=tweets']
+  args: ['app', 'deploy']
   dir: 'twitter-to-pubsub'
 
 # Dataflow

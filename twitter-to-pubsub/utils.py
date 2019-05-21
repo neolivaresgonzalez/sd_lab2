@@ -36,4 +36,4 @@ def create_pubsub_client(credentials):
     """Build the pubsub client."""
     http = httplib2.Http()
     credentials.authorize(http)
-    return discovery.build('pubsub', 'v1beta2', http=http)
+    return discovery.build('pubsub', 'v1', http=http)
