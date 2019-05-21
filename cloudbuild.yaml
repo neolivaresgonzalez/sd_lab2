@@ -1,0 +1,15 @@
+steps:
+# The code
+- name: gcr.io/cloud-builders/git
+  args: ['clone', 'https://github.com/powei94/sd_lab2']
+
+# App Engine
+- name: gcr.io/cloud-builders/gcloud
+  args: ['beta', 'app', 'deploy', '--version=tweets']
+  dir: 'twitter-to-pubsub'
+
+# Dataflow
+- name: gcr.io/cloud-builders/gradle
+  args: ['run']
+
+timeout: 1800s
