@@ -3,11 +3,10 @@ steps:
 - name: gcr.io/cloud-builders/git
   args: ['clone', 'https://github.com/powei94/sd_lab2.git']
 
-# # App Engine
-# - name: gcr.io/cloud-builders/gcloud
-#   #args: ['app', 'deploy', '--version=tweets']
-#   args: ['app', 'deploy']
-#   dir: 'twitter-to-pubsub'
+# App Engine
+- name: gcr.io/cloud-builders/gcloud
+  args: ['app', 'deploy']
+  dir: 'twitter-to-pubsub'
 
 # Dataflow
 - name: gcr.io/cloud-builders/gradle
